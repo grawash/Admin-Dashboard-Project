@@ -111,7 +111,117 @@ input[type="text"]{
     width: 100px;
     border-radius: 30px;
 }
+.action>button:hover{
+    cursor: pointer;
+}
 /* MAIN CONTENT */
 .content{
+    padding:20px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: var(--main-gray);
+    display: grid;
+    gap:20px;
+    grid-template-columns: 2fr 0.8fr;
+}
+.projects{
+    display:grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+.contentParagraph{
+    font-size:1.5rem;
+}
+.projectCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap:30px;
+}
+.card{
+    padding:20px;
+    padding-top:30px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: white;
+    border-radius: 10px;
+    border-left:10px solid orange;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.cardHeading{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.cardDescription{
+    opacity: 0.5;
+}
+.cardIcons{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardIcons>img{
+    margin-left:15px;
+}
+.cardIcons>img:hover{
+    cursor: pointer;
+}
+.feed{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap:30px
+}
+.announcement{
+    display: grid;
+    grid-template-rows:auto 1fr;
+    gap:20px
+}
+ .announcementPanel{
+    margin: 0px;
+    display: grid;
+    padding: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    gap:20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.anonce.bordered{
+    border-bottom:2px solid rgba(0, 0, 0, 0.1);
+}
+.anonce{
+    padding-bottom:10px
+}
+.anonceText{
+    opacity: 0.5;
+}
+.trending{
+    display:grid;
+    grid-template-rows: auto 1fr;
+}
+.trendingPanel{
+    margin: 0px;
+    display: grid;
+    padding: 20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    gap:20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.trend{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+}
+.trend>img{
+    height:50px;
+    width: 50px;
+}
+.trendDesc{
+    opacity: 0.5;
 }
